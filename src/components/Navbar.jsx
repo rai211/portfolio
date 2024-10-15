@@ -22,7 +22,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed w-full mb-20 flex items-center justify-start py-2 bg-black shadow-md z-10">
+        // <nav className="fixed w-full mb-20 flex items-center justify-start py-2 bg-black shadow-md z-10">
+        <nav className="w-5/6 lg:px-7">
             <div >
                 {/* <h1 className="text-4xl font-signature ml-2 bg-black">nr</h1> */}
             </div>

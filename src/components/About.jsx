@@ -15,7 +15,7 @@ const About = () =>{
      transition={{ duration: 0.5}}
     className="w-full lg:w-1/2 lg:p-8">
         <div className="flex items-center justify-center">
-            <img src={aboutImage} alt="about" className="w-[400px] h-[450px]"/>
+            <img src={aboutImage} alt="about" className="lg:w-[400px] w-[270] lg:h-[450px] h-[300px]"/>
         </div>
     </motion.div>
     <motion.div 

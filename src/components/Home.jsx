@@ -13,7 +13,7 @@ const container = (delay) => ({
 })
 const Hero = () =>{
     return(
-        <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+        <div className="w-5/6 border-b border-neutral-900 pb-4 lg:mb-35">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
@@ -21,7 +21,7 @@ const Hero = () =>{
                        variants={container(0)}
                        initial="hidden"
                        animate="visible"
-                        className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl px-7">Nikita Rai</motion.h1>
+                        className="pb-16 text-4xl font-thin tracking-tight mt-5 lg:text-6xl px-7">Nikita Rai</motion.h1>
                         <motion.span 
                         variants={container(0.5)}
                         initial="hidden"
@@ -40,7 +40,7 @@ const Hero = () =>{
                          initial={{ x: 100, opacity: 0}}
                          animate={{ x: 0, opacity: 1}}
                          transition={{ duration: 1, delay: 1.2}}
-                         src={ProfilePic} alt="nikita rai" className="rounded-lg w-[400px] h-[500px]" />
+                         src={ProfilePic} alt="nikita rai" className="rounded-lg lg:w-[400px] w-[250px] lg:h-[500px] h-[320px]" />
                     </div>
                 </div>
             </div>
