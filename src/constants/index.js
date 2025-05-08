@@ -9,26 +9,26 @@ export const HERO_CONTENT = `I am a passionate full stack developer with a knack
 
 export const EXPERIENCES = [
   {
-    year: "December 2023 - Present",
+    year: "December 2023 - November 2024",
     role: "Backend Developer",
     company: "Tibil Solutions",
     description: `I utilized the Beckn Application Protocol (BAP) and Beckn Provider Protocol (BPP) for seamless interactions between seekers and providers. I handled search request validation through gateways, ensuring domain existence before routing to the BPP. Additionally, I collaborated with DASH on job search operations, querying databases and routing data back efficiently. I streamlined data flow between BPP and BAP to enhance communication efficiency and data accuracy.`,
-    technologies: ["Node.js", "Express.js", "PostgreSQL", "Keyclaok"],
+    technologies: ["Node.js", "Express.js", "PostgreSQL", "Keycloak", "Microservices", "JWT", "RESTful APIs", "JSON", "Git"],
   },
   {
     year: "August 2023 – November 2023",
     role: "SAP-UI5 Developer",
-    company: "Arteria Technologies",
+    company: "Arteria Technologies Pvt Ltd",
     description: `Designed and developed user interfaces for web applications using HTML, CSS, JavaScript, jQuery, and CSS, ensuring an intuitive and responsive design. Implemented features for uploading data from Excel sheets and downloading data in .xlsx format, optimizing data management processes. Developed an efficient invoice generation system to improve operational workflow and data accuracy.`,
     technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
-   }
-  // {
-  //   year: "2021 - 2022",
-  //   role: "Full Stack Developer",
-  //   company: "Facebook",
-  //   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  //   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  // },
+   },
+  {
+    year: "January 2022 - August 2023",
+    role: "Backend Developer",
+    company: "Procohort Technology Pvt Ltd",
+    description: `Designed and implemented robust backend services for a CRM system using Node.js and Express.js, ensuring efficient data processing, storage, and retrieval with PostgreSQL. Collaborated with frontend teams to deliver a seamless user experience and integrated RESTful APIs to support dynamic client interactions.`,
+    technologies: ["Node.js", "Express.js", "PostgreSQL", "JavaScript", "RESTful APIs", "JSON", "Git"],
+  },
   // {
   //   year: "2020 - 2021",
   //   role: "Software Engineer",
@@ -54,23 +54,24 @@ export const PROJECTS = [
     technologies: ["React.js", "Node.js", "Express.js", "JWT", "Tailwind CSS"],
   },
   {
+    title: "CRM",
+    image: project4,
+    description:
+      "Built secure CRM authentication and profile management using JWT, bcrypt, and RESTful APIs. Integrated middleware like Helmet and CORS, ensuring robust validation, data protection, and seamless frontend interaction.",
+    technologies: ["Node.js", "Express.js", "MySQL", "JavaScript", "RESTful APIs", "JSON", "Git"],
+  },
+  {
     title: "Portfolio Website",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "Tailwind CSS", "React", "JavaScript"],
-  }
-  // {
-  //   title: "Blogging Platform",
-  //   image: project4,
-  //   description:
-  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  // },
+  },
+  
 ];
 
 export const CONTACT = {
   address: "Doom Dooma Tinsukia, Assam",
-  phoneNo: "6003557715",
-  email: "rainikita3007@gmail.com",
+  phoneNo: "9678241162",
+  email: "nikitarai2803@gmail.com",
 };
