@@ -80,7 +80,7 @@ const Feedback = () => {
         <div className="flex justify-center">
             <button
                 type="submit"
-                className="bg-blue-500 text-white px-40 py-2 rounded hover:bg-blue-600"
+                className="bg-blue-500 text-white px-20 py-2 rounded hover:bg-blue-600"
             >
                 Send
             </button>
