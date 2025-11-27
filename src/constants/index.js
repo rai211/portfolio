@@ -3,11 +3,31 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 3 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 3.5+ years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
- export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a passion for creating efficient and user-friendly web applications. With 3 years of professional experience, I have worked with various technologies, including React, Next.js, Node.js, NestJS, MySQL, PostgreSQL, MongoDB, Keycloak, and microservices architecture. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies.`;
+ export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a passion for creating efficient and user-friendly web applications. With 3.5+ years of professional experience, I have worked with various technologies, including React, Next.js, Node.js, NestJS, MySQL, PostgreSQL, MongoDB, Keycloak, and microservices architecture. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies.`;
 
 export const EXPERIENCES = [
+  {
+  year: "July 2025 – Present",
+  role: "Associate Backend Developer",
+  company: "Delivery Centric",
+  description: `At Delivery Centric, I work on building scalable backend services using microservices and clean architecture. I develop RESTful APIs, integrate Keycloak for authentication, and ensure secure communication between services. I optimize PostgreSQL and MongoDB queries, improve API performance, and contribute to reliable backend modules with proper validation and structured logging. I also worked on the Coincentric trading platform, developing multi-exchange trading features and the Copy Trader automation module. I designed exchange-integrated APIs and deployed services on AWS EC2 and S3 for high availability.`,
+  technologies: [
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "MongoDB",
+    "Microservices",
+    "Keycloak",
+    "JWT",
+    "RESTful APIs",
+    "AWS EC2",
+    "AWS S3",
+    "Docker",
+    "Git"
+  ],
+  },
   {
     year: "December 2023 - November 2024",
     role: "Backend Developer",
@@ -39,6 +59,23 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+  title: "Coincentric Trading Platform",
+  image: project2,
+  description:
+    "Built backend services for a multi-exchange trading platform, enabling seamless trading across multiple crypto exchanges. Developed the Copy Trader module, automating trade execution for follower accounts based on lead trader activity. Implemented secure JWT-based authentication, optimized API performance, and ensured reliable communication between microservices. Deployed services on AWS EC2 and integrated S3 for secure data storage, improving the platform’s scalability and availability.",
+  technologies: [
+    "Node.js",
+    "Express.js",
+    "JWT",
+    "MongoDB",
+    "PostgreSQL",
+    "RESTful APIs",
+    "Microservices Architecture",
+    "AWS EC2",
+    "AWS S3"
+  ],
+},
   {
     title: "DASH",
     image: project1,
