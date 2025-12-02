@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants/index";
 import ProfilePic from "../assets/ProfilePic.jpeg"
 import { delay, motion } from "framer-motion";
-// import ViewCounter from "./ViewCounter"
+import ViewCounter from "./ViewCounter"
 
 
 const container = (delay) => ({
@@ -44,7 +44,7 @@ const Hero = () =>{
                          src={ProfilePic} alt="nikita rai" className="rounded-lg lg:w-[400px] w-[250px] lg:h-[500px] h-[320px]" />
                     </div>
                 </div>
-                {/* <ViewCounter/> */}
+                <ViewCounter/>
             </div>
 
         </div>
