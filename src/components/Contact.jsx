@@ -30,7 +30,7 @@ const Links = [
     id: 4,
     icon: <BsFillPersonLinesFill className="text-7xl text-[#1E3A8A]" size={40} />,
     name: "Resume",
-    href: "src/assets/Nikita_Rai_Resume.pdf",
+    href: "/Nikita_Rai_Resume.pdf",
     style: "rounded-[2px]",
     download: true,
   },

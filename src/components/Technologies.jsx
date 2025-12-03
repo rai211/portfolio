@@ -1,7 +1,8 @@
 import { RiReactjsLine } from "react-icons/ri"
 import { FaNodeJs, FaGithub  } from "react-icons/fa";         
-import { SiPostgresql, SiMysql, SiJavascript, SiHtml5, SiCss3, SiDocker  } from "react-icons/si"; 
+import { SiPostgresql, SiMysql, SiJavascript, SiHtml5, SiCss3, SiDocker,SiAmazon  } from "react-icons/si"; 
 import { animate, motion } from "framer-motion";
+
 
 
 const iconvariable = (duration) => ({
@@ -96,7 +97,17 @@ const Technologies = () =>{
         >
           <SiDocker className="text-7xl text-[#2496ED]" /> 
         </motion.div>
-         </motion.div>
+          {/* ---------------- AWS Added ---------------- */}
+        <motion.div
+          variants={iconvariable(12)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiAmazon  className="text-7xl text-orange-400" />
+        </motion.div>
+      </motion.div>
+         
      <div>
 </div>
 

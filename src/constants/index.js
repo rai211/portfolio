@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.jpg";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 3.5+ years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -61,7 +62,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
   title: "Coincentric Trading Platform",
-  image: project2,
+  image: project5,
   description:
     "Built backend services for a multi-exchange trading platform, enabling seamless trading across multiple crypto exchanges. Developed the Copy Trader module, automating trade execution for follower accounts based on lead trader activity. Implemented secure JWT-based authentication, optimized API performance, and ensured reliable communication between microservices. Deployed services on AWS EC2 and integrated S3 for secure data storage, improving the platform’s scalability and availability.",
   technologies: [
