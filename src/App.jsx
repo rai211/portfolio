@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Project from './components/Project';
 import Contact from "./components/Contact";
 import Feedback from "./components/Feedback";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -27,9 +28,11 @@ const App = () => {
           <section id="experience"><Experience /></section>
           <section id="project"><Project /></section>
           <section id="contact"><Contact /></section>
-          <section id="feedback"><Feedback /></section>
+          {/* <section id="feedback"><Feedback /></section> */}
 
         </div>
+                <Footer />
+
       </div>
     </div>
   );

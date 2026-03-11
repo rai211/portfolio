@@ -3,18 +3,38 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
+import delivery from "../assets/projects/deliverycentric.jpg"
+import tibil from "../assets/projects/tibil.png";
+import arteria from "../assets/projects/arteria.png"
+import proco from "../assets/projects/proco.webp"
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 3.5+ years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and PostgreSQL. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `Backend-focused full stack developer with 3.5+ years of experience building scalable web applications, REST APIs, and microservices. I specialize in Node.js, Express.js, PostgreSQL, and MySQL, with strong experience in backend architecture, authentication systems, and performance optimization.Along with backend development, I work with React and Next.js to build modern web interfaces. I also have experience deploying and managing applications on AWS using Docker and cloud-based DevOps practices.`;
 
- export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a passion for creating efficient and user-friendly web applications. With 3.5+ years of professional experience, I have worked with various technologies, including React, Next.js, Node.js, NestJS, MySQL, PostgreSQL, MongoDB, Keycloak, and microservices architecture. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies.`;
+ export const ABOUT_TEXT = `I am a backend-focused full stack developer with 3.5+ years of experience designing and building scalable web applications and distributed systems. My core expertise lies in developing REST APIs, microservices, and backend services using Node.js, NestJS, PostgreSQL, MySQL, and MongoDB.
+
+I have worked on building secure authentication systems using Keycloak and JWT, designing microservices-based architectures, and optimizing database queries for better performance and reliability.
+
+In addition to backend development, I have experience working with React and Next.js to build responsive user interfaces. I also work with AWS and Docker to deploy and manage applications using modern DevOps practices.
+
+I enjoy solving complex backend problems, improving system performance, and building reliable systems that scale in real-world production environments.`;
 
 export const EXPERIENCES = [
   {
-  year: "July 2025 – Present",
+    startDate: "July 2025",
+    endDate: "Present",
+  year: "Jul 2025 – Present",
   role: "Associate Backend Developer",
-  company: "Delivery Centric",
-  description: `At Delivery Centric, I work on building scalable backend services using microservices and clean architecture. I develop RESTful APIs, integrate Keycloak for authentication, and ensure secure communication between services. I optimize PostgreSQL and MongoDB queries, improve API performance, and contribute to reliable backend modules with proper validation and structured logging. I also worked on the Coincentric trading platform, developing multi-exchange trading features and the Copy Trader automation module. I designed exchange-integrated APIs and deployed services on AWS EC2 and S3 for high availability.`,
-  technologies: [
+  company: "Delivery Centric Technology Services Pvt Ltd",
+  logo: delivery,
+  description: [
+            "Developed scalable backend services using microservices architecture.",
+            "Built RESTful APIs using Node.js and Express.js.",
+            "Optimized PostgreSQL and MongoDB queries.",
+            "Implemented validation layers and structured logging.",
+            "Developed multi-exchange trading features for the Coincentric platform.",
+            "Deployed backend services on AWS EC2 and S3."
+          ],
+    technologies: [
     "Node.js",
     "Express.js",
     "PostgreSQL",
@@ -30,26 +50,35 @@ export const EXPERIENCES = [
   ],
   },
   {
-    year: "December 2023 - November 2024",
+    startDate: "December 2023",
+    endDate: "November 2024",
+    year: "Dec 2023 - Nov 2024",
     role: "Backend Developer",
     company: "Tibil Solutions",
+    logo: tibil,
     description: `I utilized the Beckn Application Protocol (BAP) and Beckn Provider Protocol (BPP) for seamless interactions between seekers and providers. I handled search request validation through gateways, ensuring domain existence before routing to the BPP. Additionally, I collaborated with DASH on job search operations, querying databases and routing data back efficiently. I streamlined data flow between BPP and BAP to enhance communication efficiency and data accuracy.`,
     technologies: ["Node.js", "Express.js", "PostgreSQL", "Keycloak", "Microservices", "JWT", "RESTful APIs", "JSON", "Git"],
   },
   {
-    year: "August 2023 – November 2023",
+    startDate: "August 2023",
+    endDate: "November 2023",
+    year: "Aug 2023 – Nov 2023",
     role: "SAP-UI5 Developer",
+    logo: arteria,
     company: "Arteria Technologies Pvt Ltd",
     description: `Designed and developed user interfaces for web applications using HTML, CSS, JavaScript, jQuery, and CSS, ensuring an intuitive and responsive design. Implemented features for uploading data from Excel sheets and downloading data in .xlsx format, optimizing data management processes. Developed an efficient invoice generation system to improve operational workflow and data accuracy.`,
     technologies: ["HTML", "CSS", "JavaScript", "jQuery"],
    },
-  {
-    year: "January 2022 - August 2023",
-    role: "Backend Developer",
-    company: "Procohort Technology Pvt Ltd",
-    description: `Designed and implemented robust backend services for a CRM system using Node.js and Express.js, ensuring efficient data processing, storage, and retrieval with PostgreSQL. Collaborated with frontend teams to deliver a seamless user experience and integrated RESTful APIs to support dynamic client interactions.`,
-    technologies: ["Node.js", "Express.js", "PostgreSQL", "JavaScript", "RESTful APIs", "JSON", "Git"],
-  },
+ {
+  startDate: "January 2022",
+  endDate: "August 2023",
+  year: "Jan 2022 - Aug 2023",
+  role: "Backend Developer",
+  company: "Procohort Technology Pvt Ltd",
+  logo: proco,
+  description: `Designed and implemented robust backend services for a CRM system using Node.js and Express.js, ensuring efficient data processing, storage, and retrieval with PostgreSQL. Collaborated with frontend teams to deliver a seamless user experience and integrated RESTful APIs to support dynamic client interactions.`,
+  technologies: ["Node.js", "Express.js", "PostgreSQL", "JavaScript", "RESTful APIs", "JSON", "Git"],
+},
   // {
   //   year: "2020 - 2021",
   //   role: "Software Engineer",
