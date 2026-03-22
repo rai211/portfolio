@@ -6,10 +6,10 @@ import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 
 const socialLinks = [
-  { icon: <FaInstagram />, href: "https://instagram.com/yourusername", color: "text-pink-500", label: "Instagram" },
+  // { icon: <FaInstagram />, href: "https://instagram.com/yourusername", color: "text-pink-500", label: "Instagram" },
   { icon: <FaGithub />, href: "https://github.com/rai211", color: "text-white", label: "GitHub" },
-  { icon: <FaLinkedin />, href: "https://linkedin.com/in/yourprofile", color: "text-[#0077B5]", label: "LinkedIn" },
-  { icon: <SiLeetcode />, href: "https://leetcode.com/yourusername", color: "text-yellow-400", label: "LeetCode" },
+  { icon: <FaLinkedin />, href: "https://linkedin.com/in/nikitarai02", color: "text-[#0077B5]", label: "LinkedIn" },
+  // { icon: <SiLeetcode />, href: "https://leetcode.com/yourusername", color: "text-yellow-400", label: "LeetCode" },
 ];
 
 const Contact = () => {

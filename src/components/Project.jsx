@@ -3,33 +3,27 @@ import { motion } from "framer-motion";
 
 const Project = () => {
   return (
-    <div className="border-b border-neutral-800 pb-20">
-
-      <motion.h2
+    <div className="border-b border-neutral-900 pb-20 xl:px-40 lg:px-10">
+      <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -30 }}
+        initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-16 text-center text-4xl font-thin tracking-tight text-white"
+        className="my-20 text-center text-4xl"
       >
-        My <span className="text-neutral-500">Projects</span>
-      </motion.h2>
+        Projects
+      </motion.h1>
 
-      <div className="w-5/6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
         {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-            viewport={{ once: true }}
-            whileHover={{ y: -4 }}
-            className="flex flex-row bg-neutral-900/60 border border-neutral-800 rounded-xl
-              overflow-hidden hover:border-purple-500/40 hover:shadow-lg
-              hover:shadow-purple-500/10 transition-all duration-300"
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="flex flex-col bg-neutral-900/70 border border-neutral-800 rounded-2xl overflow-hidden hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300"
           >
-
-            {/* LEFT — Image */}
-            <div className="w-32 min-w-32 lg:w-36 lg:min-w-36 overflow-hidden">
+            {/* Top - Image */}
+            <div className="w-full h-64 overflow-hidden border-b border-neutral-800/50">
               <img
                 src={project.image}
                 alt={project.title}
@@ -37,45 +31,31 @@ const Project = () => {
               />
             </div>
 
-            {/* RIGHT — Content */}
-            <div className="flex flex-col justify-between flex-1 gap-3 p-4">
+            {/* Bottom - Content */}
+            <div className="flex flex-col flex-1 p-6">
+              <h6 className="font-semibold text-white text-xl mb-3">
+                {project.title}
+              </h6>
 
-              <div className="flex flex-col gap-1.5">
-                <div className="flex items-center gap-2">
-                  <span className="text-purple-500/60 text-xs font-mono">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <div className="w-5 h-px bg-purple-500/30" />
-                  <h3 className="text-sm font-semibold text-white leading-snug">
-                    {project.title}
-                  </h3>
-                </div>
+              <p className="text-neutral-400 text-sm leading-relaxed mb-6 flex-1">
+                {project.description}
+              </p>
 
-                <p className="text-neutral-400 text-xs leading-relaxed line-clamp-3">
-                  {project.description}
-                </p>
-              </div>
-
-              {/* Tech tags */}
-              <div className="flex flex-wrap gap-1.5 mt-auto">
+              {/* Technologies */}
+              <div className="flex flex-wrap gap-2 mt-auto">
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="rounded-md bg-neutral-800 px-2 py-0.5 text-xs font-medium
-                      text-purple-400 border border-neutral-700
-                      hover:border-purple-500/50 hover:text-purple-300 transition-colors duration-200"
+                    className="rounded-md bg-neutral-800 px-3 py-1 text-xs font-medium text-purple-300 border border-neutral-700 hover:border-purple-500/50 transition-colors"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-
             </div>
-
           </motion.div>
         ))}
       </div>
-
     </div>
   );
 };

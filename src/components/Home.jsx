@@ -1,7 +1,7 @@
 import { HERO_CONTENT } from "../constants/index";
 import ProfilePic from "../assets/ProfilePic.jpeg";
 import { motion } from "framer-motion";
-import ViewCounter from "./ViewCounter";
+// import ViewCounter from "./ViewCounter";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -83,7 +83,7 @@ const Hero = () => {
               Download Resume
             </motion.a>
 
-            <span className="text-neutral-600 text-xs tracking-widest">PDF · 2025</span>
+            {/* <span className="text-neutral-600 text-xs tracking-widest">PDF · 2025</span> */}
           </motion.div>
 
         </div>
@@ -112,7 +112,7 @@ const Hero = () => {
 
       </div>
 
-      <ViewCounter />
+      {/* <ViewCounter /> */}
     </div>
   );
 };

@@ -24,7 +24,7 @@ export default function ViewCounter() {
   return (
     <div className="view-counter">
       <FaEye size={15} />
-      <span>{count}</span>
+      <span>{count}</span>a
     </div>
   );
 }
