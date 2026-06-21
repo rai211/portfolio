@@ -1,0 +1,41 @@
+.view-counter {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.35);
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  z-index: 9999;
+  cursor: default;
+}
+
+/* Tablet (iPad) */
+@media (max-width: 768px) {
+  .view-counter {
+    bottom: 12px;
+    right: 15px;
+    font-size: 14px;
+    padding: 7px 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .view-counter {
+    bottom: 10px;
+    right: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
